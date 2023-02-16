@@ -1,2 +1,2 @@
 docker build . -t l5kit-demo --no-cache
-docker run -d l5kit-demo --ipc=host --gpus=all -v /home/temp/jupyter-data:/data --net=host 
+docker run -d --ipc=host --shm-size=64g --gpus=all -v /home/temp/jupyter-data:/data --net=host l5kit-demo jupyter-lab --allow-root --NotebookApp.token='' --ip='0.0.0.0' --NotebookApp.base_url='/notebook/' --port=8888

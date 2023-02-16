@@ -12,4 +12,4 @@ RUN pip uninstall -y nvidia_cublas_cu11
 # BUG: need to fix this
 # RUN apt install libgl1
 
-CMD ["jupyter-lab", "--allow-root", "--NotebookApp.token=", "--ip=0.0.0.0", "--NotebookApp.base_url=/notebook/", "--port=8888"]
+# CMD ["jupyter-lab", "--allow-root", "--NotebookApp.token=", "--ip=0.0.0.0", "--NotebookApp.base_url=/notebook/", "--port=8888"]
