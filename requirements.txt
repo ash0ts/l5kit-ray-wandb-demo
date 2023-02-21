@@ -5,3 +5,5 @@ PyYAML==6.0
 ray==2.0.0rc1
 wandb==0.13.10
 opencv-python==4.5.5.64
+numpy==1.21.6
+bokeh==2.4.3

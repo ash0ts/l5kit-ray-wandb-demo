@@ -1,4 +1,5 @@
 FROM nvcr.io/nvidia/pytorch:23.01-py3
+#BUG: use pytorch base container without the alpha pytorch
 
 RUN git clone https://github.com/ash0ts/l5kit-ray-wandb-demo.git
 WORKDIR l5kit-ray-wandb-demo
