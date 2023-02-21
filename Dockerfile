@@ -9,8 +9,6 @@ RUN pip install -r requirements.txt
 RUN pip install "ray[air]"
 #Torch automatically installs CUDNN despite us having our own setup causing issues
 RUN pip uninstall -y nvidia_cublas_cu11
-#The Nvidia container uses an alpha version of torch to deal with CUDA 12.0. We will downgrade the stable version to deal with any issues
-RUN pip3 install torch torchvision torchaudio
 RUN apt-get update && apt-get -y install libgl1
 
 # CMD ["jupyter-lab", "--allow-root", "--NotebookApp.token=", "--ip=0.0.0.0", "--NotebookApp.base_url=/notebook/", "--port=8888"]

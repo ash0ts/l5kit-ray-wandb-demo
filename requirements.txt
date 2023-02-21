@@ -7,3 +7,6 @@ wandb==0.13.10
 opencv-python==4.5.5.64
 numpy==1.19.5
 bokeh==2.4.3
+torch==1.13.1
+torchvision==0.14.1
+torchaudio==0.13.1
