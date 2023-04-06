@@ -11,6 +11,6 @@ RUN pip install "ray[air]"
 RUN pip uninstall -y nvidia_cublas_cu11
 RUN apt-get update && apt-get -y install libgl1
 #Numpy pin does not work in reqs. Current workaround
-RUN pip install numpy==1.19.5
+RUN pip install numpy==1.19.5 gpustat==1.0
 
 # CMD ["jupyter-lab", "--allow-root", "--NotebookApp.token=", "--ip=0.0.0.0", "--NotebookApp.base_url=/notebook/", "--port=8888"]
